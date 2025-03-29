@@ -2,29 +2,29 @@ import {
   Box,
   Card,
   CardContent,
-  CardMedia,
+  //   CardMedia,
   Typography,
   Button,
-  CardActions,
-  Chip,
+  //   CardActions,
+  //   Chip,
   LinearProgress,
   Paper,
-  Grid,
-  useTheme,
-  useMediaQuery,
+  //   Grid,
+  //   useTheme,
+  //   useMediaQuery,
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { lessons } from "../data/lessons";
 import LockIcon from "@mui/icons-material/Lock";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import AccessTimeIcon from "@mui/icons-material/AccessTime";
-import SchoolIcon from "@mui/icons-material/School";
+// import AccessTimeIcon from "@mui/icons-material/AccessTime";
+// import SchoolIcon from "@mui/icons-material/School";
 import { useProgress } from "../hooks/useProgress";
 
 const LessonList = () => {
   const navigate = useNavigate();
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  //   const theme = useTheme();
+  //   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const { getOverallProgress, isLessonCompleted } = useProgress(lessons);
 
   const { completed, total, percentage } = getOverallProgress();

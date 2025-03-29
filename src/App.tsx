@@ -16,7 +16,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import HomeIcon from "@mui/icons-material/Home";
 import SchoolIcon from "@mui/icons-material/School";
 import { useState } from "react";
-import { theme } from "./theme";
+// import { theme } from "./theme";
 import LessonList from "./components/LessonList";
 import LessonDetail from "./components/LessonDetail";
 import { lessons } from "./data/lessons";
@@ -118,7 +118,7 @@ const NavigationDrawer = ({
 function App() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  // const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
